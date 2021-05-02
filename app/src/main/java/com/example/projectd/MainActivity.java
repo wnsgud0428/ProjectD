@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity implements FragmentCallback{
         //원래코드
         //getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment, fragment_movieDetailInfo).commit();
         getSupportFragmentManager().beginTransaction().replace(R.id.nav_host_fragment, fragment_movieDetailInfo).addToBackStack(null).commit();
-        //fragment에 있는 list view가 이상하게 됨! 
+        //fragment에 있는 list view가 이상하게 됨!
     }
 
     public void onCommand_CommentWriteActivity(){
