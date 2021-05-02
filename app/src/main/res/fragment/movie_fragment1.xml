@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/imageView_poster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        app:srcCompat="@drawable/image1" />
+
+    <TextView
+        android:id="@+id/textView_movieName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView_poster"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:text="1. 군도"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/textView_movieInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView_line"
+        android:layout_centerHorizontal="true"
+        android:text="예매율 61.6% | 15세 관람가 | D-1" />
+
+    <ImageView
+        android:id="@+id/imageView_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_movieName"
+        app:srcCompat="@drawable/home_slider1" />
+
+    <Button
+        android:id="@+id/button_viewDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_below="@+id/textView_movieInfo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:background="@android:color/holo_orange_dark"
+        android:text="상세보기"
+        app:backgroundTint="@color/material_on_background_disabled"
+        app:backgroundTintMode="add" />
+
+</RelativeLayout>
